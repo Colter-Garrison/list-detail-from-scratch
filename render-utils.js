@@ -8,6 +8,9 @@ export function renderMollusks(mollusksEl) {
     const img = document.createElement('img');
     img.src = mollusksEl.image;
 
+    const a = document.createElement('a');
+    a.href = `./mollusk-page/?id=${mollusksEl.id}`;
+
     const p = document.createElement('p');
     p.textContent = `This mollusk is ${mollusksEl.native} and ${mollusksEl.length}.`;
 
@@ -20,7 +23,7 @@ export function renderMollusks(mollusksEl) {
         li.textContent = found;
         ul.append(li);
     }
-
-    div.append(h1, img, p, h3, ul);
+    a.append(h1, img);
+    div.append(a);
     return div;
 }
