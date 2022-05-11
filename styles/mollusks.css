@@ -1,0 +1,14 @@
+body {
+    background: #155263;
+    color: #ff9a3c;
+    display:flex;
+    justify-content: center;
+}
+
+#home {
+    color: #ff6f3c;
+}
+
+#mollusk-image {
+    border-radius: 10%;
+}
